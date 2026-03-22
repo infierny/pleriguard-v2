@@ -159,7 +159,12 @@ tr:hover td { background: #161b22; }
   <td>{{ brand.name or '—' }}</td>
   <td>
     {% if brand.country %}
-      <span class="country-flag">{{ {'BR':'🇧🇷', 'CL':'🇨🇱', 'CO':'🇨🇴', 'MX':'🇲🇽', 'GLOBAL':'🌍'}.get(brand.country, '🏁') }}</span>{{ brand.country }}
+      <span class="country-flag">{{ {
+        'US':'🇺🇸', 'CA':'🇨🇦', 'MX':'🇲🇽', 'GT':'🇬🇹', 'BZ':'🇧🇿', 'SV':'🇸🇻', 'HN':'🇭🇳', 'NI':'🇳🇮', 'CR':'🇨🇷', 'PA':'🇵🇦',
+        'CU':'🇨🇺', 'JM':'🇯🇲', 'HT':'🇭🇹', 'DO':'🇩🇴', 'PR':'🇵🇷', 'TT':'🇹🇹', 'BB':'🇧🇧', 'LC':'🇱🇨', 'GD':'🇬🇩', 'VC':'🇻🇨', 'AG':'🇦🇬', 'KN':'🇰🇳', 'DM':'🇩🇲', 'BS':'🇧🇸',
+        'BR':'🇧🇷', 'AR':'🇦🇷', 'CL':'🇨🇱', 'CO':'🇨🇴', 'PE':'🇵🇪', 'VE':'🇻🇪', 'EC':'🇪🇨', 'BO':'🇧🇴', 'PY':'🇵🇾', 'UY':'🇺🇾', 'GY':'🇬🇾', 'SR':'🇸🇷', 'GF':'🇬🇫',
+        'LATAM':'🌎', 'GLOBAL':'🌍'
+      }.get(brand.country, '🏁') }}</span>{{ brand.country }}
     {% else %}
       —
     {% endif %}
@@ -216,13 +221,49 @@ tr:hover td { background: #161b22; }
             <label class="form-label" for="country">Country</label>
             <select class="form-input" id="country">
               <option value="">Select Country</option>
+              <!-- North America -->
+              <option value="US">🇺🇸 United States</option>
+              <option value="CA">🇨🇦 Canada</option>
+              <option value="MX">🇲🇽 Mexico</option>
+              <!-- Central America -->
+              <option value="GT">🇬🇹 Guatemala</option>
+              <option value="BZ">🇧🇿 Belize</option>
+              <option value="SV">🇸🇻 El Salvador</option>
+              <option value="HN">🇭🇳 Honduras</option>
+              <option value="NI">🇳🇮 Nicaragua</option>
+              <option value="CR">🇨🇷 Costa Rica</option>
+              <option value="PA">🇵🇦 Panama</option>
+              <!-- Caribbean -->
+              <option value="CU">🇨🇺 Cuba</option>
+              <option value="JM">🇯🇲 Jamaica</option>
+              <option value="HT">🇭🇹 Haiti</option>
+              <option value="DO">🇩🇴 Dominican Republic</option>
+              <option value="PR">🇵🇷 Puerto Rico</option>
+              <option value="TT">🇹🇹 Trinidad and Tobago</option>
+              <option value="BB">🇧🇧 Barbados</option>
+              <option value="LC">🇱🇨 Saint Lucia</option>
+              <option value="GD">🇬🇩 Grenada</option>
+              <option value="VC">🇻🇨 Saint Vincent and the Grenadines</option>
+              <option value="AG">🇦🇬 Antigua and Barbuda</option>
+              <option value="KN">🇰🇳 Saint Kitts and Nevis</option>
+              <option value="DM">🇩🇲 Dominica</option>
+              <option value="BS">🇧🇸 Bahamas</option>
+              <!-- South America -->
               <option value="BR">🇧🇷 Brazil</option>
+              <option value="AR">🇦🇷 Argentina</option>
               <option value="CL">🇨🇱 Chile</option>
               <option value="CO">🇨🇴 Colombia</option>
-              <option value="MX">🇲🇽 Mexico</option>
-              <option value="AR">🇦🇷 Argentina</option>
               <option value="PE">🇵🇪 Peru</option>
+              <option value="VE">🇻🇪 Venezuela</option>
+              <option value="EC">🇪🇨 Ecuador</option>
+              <option value="BO">🇧🇴 Bolivia</option>
+              <option value="PY">🇵🇾 Paraguay</option>
               <option value="UY">🇺🇾 Uruguay</option>
+              <option value="GY">🇬🇾 Guyana</option>
+              <option value="SR">🇸🇷 Suriname</option>
+              <option value="GF">🇬🇫 French Guiana</option>
+              <!-- Global/Regional -->
+              <option value="LATAM">🌎 Latin America</option>
               <option value="GLOBAL">🌍 Global</option>
             </select>
           </div>

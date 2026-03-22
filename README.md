@@ -24,8 +24,8 @@ Pleriguard V2 is a comprehensive threat detection system that monitors Certifica
 - **Search & Filter** - Find threats by category, brand, country
 
 ### 🏷️ **Brand Database**
-- **33 Latin American Brands** - Banks, fintech, government, e-commerce
-- **Multi-country Support** - 🇧🇷🇨🇱🇨🇴🇲🇽🇦🇷🇵🇪🇺🇾🌍
+- **33+ Brands** - Banks, fintech, government, e-commerce across Americas
+- **Full Americas Coverage** - All 35 countries from 🇺🇸🇨🇦🇲🇽 to 🇧🇷🇦🇷🇨🇱 + Caribbean 🏝️
 - **Sector Classification** - Banking, fintech, transport, government
 - **Opportunity Scoring** - Risk assessment (0-100)
 - **Authorized Domains** - Legitimate domain whitelist
