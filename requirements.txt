@@ -1,0 +1,15 @@
+flask==3.0.0
+psycopg2-binary==2.9.9
+requests==2.31.0
+websocket-client==1.6.4
+tldextract==5.1.1
+python-dateutil==2.8.2
+Jinja2==3.1.2
+
+# Optional dependencies for enhanced functionality
+# urllib3==2.1.0  # Already included with requests
+
+# Development dependencies (optional)
+# pytest==7.4.3
+# black==23.11.0
+# flake8==6.1.0
